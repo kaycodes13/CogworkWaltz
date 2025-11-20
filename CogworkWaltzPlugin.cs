@@ -1,9 +1,7 @@
 using BepInEx;
 using Cogwork_Waltz.Components;
-using GenericVariableExtension;
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
