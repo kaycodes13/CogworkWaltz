@@ -1,6 +1,9 @@
 using BepInEx;
+using Cogwork_Waltz.Components;
+using GenericVariableExtension;
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -41,8 +44,12 @@ public partial class CogworkWaltzPlugin : BaseUnityPlugin {
 		if (scene.name != "Cog_Dancers_boss")
 			return;
 
+		GameObject dancerControl = GameObject.Find("Dancer Control");
+
+		dancerControl.AddComponent<ResyncCogworkDancers>();
+
 		PlayMakerFSM
-			fsm = GameObject.Find("Dancer Control")
+			fsm = dancerControl
 				.GetComponents<PlayMakerFSM>()
 				.First(fsm => fsm.FsmName == "Music Control");
 

@@ -10,11 +10,11 @@ Install via r2modman or Thunderstore Mod Manager. Cogwork Waltz' dependencies sh
 
 For manual installation, extract the `.zip` file and place the resulting folder in the `BepInEx/plugins` directory for your Silksong install. You'll also have to manually install [WavLib](https://thunderstore.io/c/hollow-knight-silksong/p/SFGrenade/WavLib/).
 
-## Notes on the timing
+## A Note on Gameplay
 
-The rearrangement was made to be loopable and to (mostly) fit the tempo of the original music - which is very cool. However, there are some shenanigans that I wanted to write down for posterity.
+This mod, in addition to replacing the music, also implements a bug fix that stops the boss from desyncing from the music. It doesn't alter the intended movement speed in any way, but if there's any delay or game lag the boss will resume moving precisely on beat rather than being thrown off as it would in the vanilla game.
 
-## Notes on Tempo and Timing
+## Less Important Notes on Tempo and Timing
 
 The rearrangement was made to be loopable and to (mostly) fit the tempo of the original music - which is very cool and is what spurred me to make this mod in the first place. However, there are some shenanigans that I wanted to write down for posterity.
 
